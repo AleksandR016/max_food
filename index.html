@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин роллов</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="test.png" width="92" alt="Суши и пицца">
+			<div class="display-4">Доставка Фаст ФУда</div>
+			<p class="lead">Оперативно и вкусно</p>
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+
+					<!-- Лаваш -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="01">
+							<img class="product-img" src="lavash.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Лаваш</h4>
+								<p>мясо, соус, сыр, тесто</p>
+								<p><small data-items-in-box="" class="text-muted">6 шт.</small></p>
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter="">1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<div class="price">
+										<div class="price__weight">180г.</div>
+										<div class="price__currency">29.000 UZS</div>
+									</div>
+								</div>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- // Лаваш -->
+
+					<!-- Хагги -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="02">
+							<img class="product-img" src="haggi.png" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Хагги</h4>
+								<p>мясо, сыр, соус, салатный лист, хлеб</p>
+								<p><small data-items-in-box="" class="text-muted">6 шт.</small></p>
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter="">1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<div class="price">
+										<div class="price__weight">205г.</div>
+										<div class="price__currency">29.000 UZS</div>
+									</div>
+								</div>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- // Хагги -->
+
+					<!-- Хот Дог -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="03">
+							<img class="product-img" src="hot-dog.png" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Хот Дог</h4>
+								<p>сосиска, соус, хлеб</p>
+								<p><small data-items-in-box="" class="text-muted">6 шт.</small></p>
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter="">1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<div class="price">
+										<div class="price__weight">182г.</div>
+										<div class="price__currency">18.000 UZS</div>
+									</div>
+								</div>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- // Хот-Дог -->
+
+					<!-- Бургер -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="04">
+							<img class="product-img" src="burger.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Бургер</h4>
+								<p>хлеб, котлета, помидор, салатный лист</p>
+								<p><small data-items-in-box="" class="text-muted">6 шт.</small></p>
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter="">1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<div class="price">
+										<div class="price__weight">230г.</div>
+										<div class="price__currency">28.000 UZS</div>
+									</div>
+								</div>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- // Бургер -->
+
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			<div class="card mb-4">
+				<div class="card-body">
+					<h5 class="card-title">Ваш заказ</h5>
+					<div data-cart-empty class="alert alert-secondary" role="alert">
+						Корзина пуста
+					</div>
+					<!-- cart-wrapper -->
+					<div class="cart-wrapper"></div>
+					<!-- Здесь будут добавляться товары в корзине -->
+				</div>
+			</div>
+			<!-- // Корзина -->
+
+			<!-- Стоимость заказа -->
+			<div class="cart-total">
+				<p><span class="h5">Доставка:</span> <span class="delivery-cost free">10.000 UZS</span></p>
+				<p><span class="h5">Итого:</span> <span class="total-price">00.000 </span> <span class="rouble">UZS</span></p>
+			</div>
+			<!-- // Стоимость заказа -->
+
+			<!-- Оформить заказ -->
+			<div id="order-form" class="card-body border-top">
+				<h5 class="card-title">Оформить заказ</h5>
+				<form id="orderForm">
+					<div class="form-group">
+						<input type="text" id="phone" class="form-control" placeholder="Ваш номер телефона">
+					</div>
+					<button data-card type="submit" class="btn btn-primary">Заказать</button>
+				</form>
+				<script>
+					document.getElementById('orderForm').addEventListener('submit', function(event) {
+						event.preventDefault(); // Остановить стандартное поведение формы
+						
+						const phone = document.getElementById('phone').value; // Получите номер телефона
+						const cartItems = []; // Массив для хранения заказанных товаров
+					
+						// Соберите все товары из корзины
+						const items = document.querySelectorAll('.cart-wrapper .card'); // Измените селектор на правильный
+					
+						items.forEach(item => {
+							const itemId = item.getAttribute('data-id'); // Получите ID товара
+							const quantity = item.querySelector('[data-counter]').textContent; // Получите количество
+							cartItems.push({ itemId, quantity }); // Добавьте товар в массив
+						});
+					
+						// Отправка данных на сервер
+						fetch('add_order.php', {
+							method: 'POST',
+							headers: {
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify({ phone, cartItems })
+						})
+						.then(response => response.json())
+						.then(data => {
+							alert('Заказ добавлен: ' + data.message);
+						})
+						.catch(error => {
+							console.error('Ошибка:', error);
+						});
+					});
+				</script>
+			</div>
+			<!-- // Оформить заказ -->
+
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+	<script src="./js/ToggleCardStatus.js"></script>
+	<script src="./js/counter 0.2.js"></script> 
+	<script src="./js/card01.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+    <script src="./js/server.js"></script>
+	<script>
+		var protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+		var address = protocol + window.location;
+	</script>
+
+</body>
+</html>

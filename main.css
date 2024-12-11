@@ -1,0 +1,220 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Центрирование логотипа и заголовка */
+.header {
+    padding: 30px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.header .display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.header p.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Стили карточек товаров */
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px; /* Отступ между карточками */
+    max-width: 100%; /* Максимальная ширина 100% для мобильных */
+    box-sizing: border-box; /* Учитывать отступы в ширине */
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e9ecef;
+    display: block;
+}
+
+/* Адаптация для больших экранов */
+@media (min-width: 768px) {
+    .card {
+        max-width: 300px; /* Ограничиваем максимальную ширину карточек */
+        margin: 20px; /* Отступ между карточками */
+    }
+}
+
+.card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.card .details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card .price {
+    text-align: right;
+}
+
+.card .price__currency {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #eb5a1e;
+}
+
+/* Контролы количества */
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items__control {
+    cursor: pointer;
+    padding: 5px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.items__current {
+    padding: 0 15px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Кнопка добавления в корзину */
+.btn-outline-warning {
+    margin-top: 15px;
+    border: 2px solid #eb5a1e;
+    color: #eb5a1e;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-outline-warning:hover {
+    background-color: #eb5a1e;
+    color: #fff;
+}
+
+/* Стили корзины */
+.cart-item__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item__img img {
+    width: 60px;
+    height: auto;
+}
+
+.cart-item__desc {
+    padding-left: 15px;
+}
+
+.cart-item__title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cart-total {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.total-price {
+    color: #eb5a1e;
+    font-weight: 700;
+}
+
+/* Оформление формы */
+#order-form .form-group {
+    margin-bottom: 15px;
+}
+
+#order-form input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#order-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#order-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Новые стили для адаптивности и улучшенного взаимодействия */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+    justify-content: center; /* Центрирует карточки по горизонтали */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.details-wrapper {
+    margin-top: 10px;
+    font-weight: bold;
+}
